@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Emobilis page</title>
+<style>
+                #navb li{
+            display: inline;
+            list-style-type: none;
+        }
+        a{
+            text-decoration: unset;
+            padding: 5px;
+            border-right: 1px solid white;
+            text-transform: uppercase;
+            color: grey;
+        }
+        #navb {
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+     #logo{
+         float: left;
+         width: 10%;
+         height: 10%;
+     }
+     #Header{
+         float: right;
+          width: 50%;
+         text-align: center;
+     }
+     #Header li{
+         display: inline;
+     }
+     h1{
+         margin-left: 500px;}
+     h3{
+         margin-left: 600px;
+     }
+    .courses{
+        float: left;
+        margin-right: 10px;
+        border: 2px solid darkgrey;
+        height: 550px;
+        width: 20%;
+    }
+
+    #pop{
+        background-color: lightgrey;
+    }
+     #first{
+         border-bottom: 2px solid black;
+     }
+     #navdiv{
+         border-bottom: 2px solid black;}
+     .logos{
+         width: 200px;
+     }
+     </style>
+</head>
+<body>
+
+    div id="navdiv">
+        <ul id="navb">
+            <li><a href="{% url 'myhome' %}">Home</a></li>
+            <li><a href="{% url 'myabout' %}">Courses</a></li>
+            <li> <a href="{% url 'myregister' %}">Register</a></li>
+        </ul>
+        <div style="clear: both;"></div>
+    </div>
+  <h1>Registration Form</h1>
+
+  <form style="margin: auto;border-radius: 0px;padding: 60px;width: 70%;height: 50%;background-color: #95CADB" action="savedata.py" method="post">
+    <table>
+        <tr>
+            <TD>
+    <label for="fname">First Name</label><br>
+    <input type="text" id="fname" name="studfname">
+            </TD>
+
+            <td>
+    <label for="lname">Last Name</label><br>
+    <input type="text" id="lname" name="studlname">
+            </td>
+        </tr>
+
+
+        <tr><td>
+    <label for="myemail">Email</label><br>
+    <input type="email" id="myemail" name="studemail">
+        </td>
+
+          <td>
+    <label for="Course">Course</label><br>
+    <input type="text" id="Course" name="studcourse">
+        </td>
+
+        </tr>
+
+
+    <tr>
+        <td><br>  <input type="submit" name="save data" VALUE="Saving"></td>
+    </tr>
+        </table>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+           {% block title %}
+             default Emobilis page
+            {% endblock title %}
+    </title>
+</head>
+<body>
+ <div id="first">
+        <div id="logo">
+            <img src="logo.jpg">
+        </div>
+
+        <div id="Header">
+            <ul>
+                 <li style="color: red;">Technology</li>
+                 <li style="color: blue;">Innovation</li>
+                 <li style="color: green">Entrepreneurship</li>
+                 <li style="color: red">@eMobilis</li>
+            </ul>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div id="navdiv">
+        <ul id="navb">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li> <a href="contact.html">Courses</a></li>
+            <li> <a href="intakes.html">Intakes</a></li>
+            <li> <a href="mobigirlz.html">MobiGirlz</a></li>
+            <li> <a href="programs.html">Programs</a></li>
+            <li> <a href="bpo.html">BPO</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+        <div style="clear: both;"></div>
+    </div>
+
+<main>
+    {% block content %}
+        <p>My cont</p>
+    {% endblock content %}
+</main>
+
+<footer>
+    {% block footer %}
+        my footer
+    {% endblock footer %}
+</footer>
+</body>
+</html>

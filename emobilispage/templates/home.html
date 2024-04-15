@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Emobilis Page</title>
+<style>
+                #navb li{
+            display: inline;
+            list-style-type: none;
+        }
+        a{
+            text-decoration: unset;
+            padding: 5px;
+            border-right: 1px solid white;
+            text-transform: uppercase;
+            color: grey;
+        }
+        #navb {
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+     #logo{
+         float: left;
+         width: 10%;
+         height: 10%;
+     }
+     #Header{
+         float: right;
+          width: 50%;
+         text-align: center;
+     }
+     #Header li{
+         display: inline;
+     }
+     h1{
+         margin-left: 500px;}
+     h3{
+         margin-left: 600px;
+     }
+    .courses{
+        float: left;
+        margin-right: 10px;
+        border: 2px solid darkgrey;
+        height: 550px;
+        width: 20%;
+    }
+
+    #pop{
+        background-color: lightgrey;
+    }
+     #first{
+         border-bottom: 2px solid black;
+     }
+     #navdiv{
+         border-bottom: 2px solid black;}
+     .logos{
+         width: 200px;
+     }
+     </style>
+</head>
+<body>
+
+    <div id="first">
+        <div id="logo">
+            <img src="logo.jpg" alt="Description of the image">
+        </div>
+
+        <div id="Header">
+            <ul>
+                 <li style="color: red;">Technology</li>
+                 <li style="color: blue;">Innovation</li>
+                 <li style="color: green">Entrepreneurship</li>
+                 <li style="color: red">@eMobilis</li>
+            </ul>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div id="navdiv">
+        <ul id="navb">
+            <li><a href="{% url 'myhome' %}">Home</a></li>
+            <li><a href="{% url 'myabout' %}">Courses</a></li>
+            <li> <a href="{% url 'myregister' %}">Register</a></li>
+        </ul>
+        <div style="clear: both;"></div>
+    </div>
+    <div id="slide">
+        <img src="slide_7.jpg" alt="Description of the image">
+    </div>
+  <h1 style="text-align: center">
+    Welcome to Emobilis
+  </h1>
+
+  <div style="overflow: auto;">
+    <div style="float: left;width: 50%;height: 60%;" >
+      <img src="home.jpg" alt="Description of the image">
+    </div>
+
+    <div style="float: right;background-color:#50C878;width: 30%;height:60%;margin-right: 20px;">
+      <p style="font-size:40px;">House of Information Technology and the epitome of great innovation</p>
+      <p style="font-size:40px;">We plan on offering priceless information to jumpstart your career in the technological field.</p>
+    </div>
+  </div>
+</body>
+</html>

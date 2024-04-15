@@ -1,0 +1,54 @@
+            #navb li{
+            display: inline;
+            list-style-type: none;
+        }
+        a{
+            text-decoration: unset;
+            padding: 5px;
+            border-right: 1px solid white;
+            text-transform: uppercase;
+            color: grey;
+        }
+        #navb {
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+     #logo{
+         float: left;
+         width: 10%;
+         height: 10%;
+     }
+     #Header{
+         float: right;
+          width: 50%;
+         text-align: center;
+     }
+     #Header li{
+         display: inline;
+     }
+     h1{
+         margin-left: 500px;}
+     h3{
+         margin-left: 600px;
+     }
+    .courses{
+        float: left;
+        margin-right: 10px;
+        border: 2px solid darkgrey;
+        height: 550px;
+        width: 20%;
+    }
+
+    #pop{
+        background-color: lightgrey;
+    }
+     #first{
+         border-bottom: 2px solid black;
+     }
+     #navdiv{
+         border-bottom: 2px solid black;}
+     .logos{
+         width: 200px;
+     }

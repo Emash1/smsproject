@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Emobilis page</title>
+
+    <style>
+            #navb li{
+            display: inline;
+            list-style-type: none;
+        }
+        a{
+            text-decoration: unset;
+            padding: 5px;
+            border-right: 1px solid white;
+            text-transform: uppercase;
+            color: grey;
+        }
+        #navb {
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+     #logo{
+         float: left;
+         width: 10%;
+         height: 10%;
+     }
+     #Header{
+         float: right;
+          width: 50%;
+         text-align: center;
+     }
+     #Header li{
+         display: inline;
+     }
+     h1{
+         margin-left: 500px;}
+     h3{
+         margin-left: 600px;
+     }
+    .courses{
+        float: left;
+        margin-right: 10px;
+        border: 2px solid darkgrey;
+        height: 550px;
+        width: 20%;
+    }
+
+    #pop{
+        background-color: lightgrey;
+    }
+     #first{
+         border-bottom: 2px solid black;
+     }
+     #navdiv{
+         border-bottom: 2px solid black;}
+     .logos{
+         width: 200px;
+     }
+     </style>
+</head>
+<body>
+
+    div id="navdiv">
+        <ul id="navb">
+            <li><a href="{% url 'myhome' %}">Home</a></li>
+            <li><a href="{% url 'myabout' %}">Courses</a></li>
+            <li> <a href="{% url 'myregister' %}">Register</a></li>
+        </ul>
+        <div style="clear: both;"></div>
+    </div>
+ <div style="background-color: lightgray;" >
+
+        <h1 style="clear: both;">Popular Courses</h1>
+
+        <div class="courses" style="margin-left: 20px">
+            <div>
+            <img src="And.png">
+            </div>
+             <h2>Android</h2>
+            <p>At eMobilis training school, you<br>
+                will learn how to develop apps for<br>
+                Android devices. The course is<br>
+                designed to take you from a <br>
+                novice android programmer to an <br>
+                expert with hard work and dedication.</p>
+            <form>
+                <input type="submit" value="Learn More" style="background-color: green">
+            </form>
+        </div>
+        <div class="courses" style="margin-left: 20px">
+            <div>
+           <img src="home.jpg">
+             </div>
+            <h2>Full Stack</h2>
+            <p>At eMobilis, we offer a Full<br>
+                Stack Development course<br>
+                that equips learners with the <br>
+                knowledge and skills to<br>
+                develop robust web and mobile applications.<br>
+                Through the course, you will<br>
+                gain proficiency in<br>
+                developing and deploying<br>
+                fully functional web and<br>
+                mobile applications.</p>
+             <form>
+                <input type="submit" value="Learn More" style="background-color: green">
+            </form>
+            </div>
+        <div class="courses" style="margin-left: 20px">
+            <div>
+            <img src="python.png">
+             </div>
+            <h2>Python</h2>
+            <p>-eMobilis Python development <br>
+                training course is designed to <br>
+                equip learners with the skills and <br>
+                knowledge necessary to develop <br>
+                Python-based applications and <br>
+                websites. Learners will be able to develop <br>
+                a wide range of outputs, <br> including web applications,</br>games, and automation scripts.</p>
+             <form>
+                <input type="submit" value="Learn More" style="background-color: green">
+            </form>
+        </div>
+        <div class="courses" style="margin-left: 20px">
+            <div>
+            <img src="#">
+            </div>
+            <h2>Data Science</h2>
+            <p>
+                eMobilis Data Science course is <br> designed to equip learners with <br>
+                the necessary skills to extract <br> insights and knowledge from <br>
+                structured and unstructured data. <br>
+                The course covers the <br> fundamentals of statistics, data </br> analysis, machine learning, and <br>data visualisation.</p>
+                 <form>
+                <input type="submit" value="Learn More" style="background-color: green">
+            </form>
+            </p>
+
+        </div>
+    </div>
+    <div style="background-image: url('back.jpeg');background-size: cover;background-repeat: no-repeat;clear: both">
+        say
+    </div>
+</body>
+</html>
